@@ -1,25 +1,25 @@
-let inputValueElement = document.querySelector(".js-inputValue");
-let outputValueElement = document.querySelector(".js-outputValue");
-let inputCurrencyElement = document.querySelector(".js-inputCurrency");
-let outputCurrencyElement = document.querySelector(".js-outputCurrency");
-let formElement = document.querySelector(".js-form");
+const inputValueElement = document.querySelector(".js-inputValue");
+const outputValueElement = document.querySelector(".js-outputValue");
+const inputCurrencyElement = document.querySelector(".js-inputCurrency");
+const outputCurrencyElement = document.querySelector(".js-outputCurrency");
+const formElement = document.querySelector(".js-form");
 
-let ratePLN = 1.00;
-let rateEUR = 4.68;
-let rateUSD = 4.41;
-let rateGBP = 5.31;
-let rateCHF = 4.74;
+const ratePLN = 1.00;
+const rateEUR = 4.68;
+const rateUSD = 4.41;
+const rateGBP = 5.31;
+const rateCHF = 4.74;
 
 formElement.addEventListener("input", () => {
-  let amount = +inputValueElement.value;
-  let inputCurrency = inputCurrencyElement.value;
-  let outputCurrency = outputCurrencyElement.value;
+  const amount = +inputValueElement.value;
+  const inputCurrency = inputCurrencyElement.value;
+  const outputCurrency = outputCurrencyElement.value;
 
   let submit;
 
   if (amount < 0) {
     alert("Kwota do przeliczenia musi być nieujemna!")
-    outputValueElement.value = `0.00 ${outputCurrency}`;
+    outputValueElement.value = `Wprowadzono błędną wartość!`;
     return;
   } else {
     switch (true) {
