@@ -1,4 +1,4 @@
-# Michał Olszewski - my website
+# Currency converter
 
 ![Animacja](images/userManualAnimation.gif)
 
