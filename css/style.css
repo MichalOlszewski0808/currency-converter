@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url("../images/exchangeOfficeBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}

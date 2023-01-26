@@ -1,0 +1,9 @@
+.infoHeader .infoHeader__icon {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-image: url(data:image/svg+xml,%3Csvg%20height%3D%22200px%22%20width%3D%22200px%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%3E%3Cg%20fill%3D%22%23000000%22%20id%3D%22Core%22%20transform%3D%22translate(-86.000000%2C%20-296.000000)%22%3E%3Cg%20id%3D%22info-outline%22%20transform%3D%22translate(86.000000%2C%20296.000000)%22%3E%3Cpath%20d%3D%22M9%2C15%20L11%2C15%20L11%2C9%20L9%2C9%20L9%2C15%20L9%2C15%20Z%20M10%2C0%20C4.5%2C0%200%2C4.5%200%2C10%20C0%2C15.5%204.5%2C20%2010%2C20%20C15.5%2C20%2020%2C15.5%2020%2C10%20C20%2C4.5%2015.5%2C0%2010%2C0%20L10%2C0%20Z%20M10%2C18%20C5.6%2C18%202%2C14.4%202%2C10%20C2%2C5.6%205.6%2C2%2010%2C2%20C14.4%2C2%2018%2C5.6%2018%2C10%20C18%2C14.4%2014.4%2C18%2010%2C18%20L10%2C18%20Z%20M9%2C7%20L11%2C7%20L11%2C5%20L9%2C5%20L9%2C7%20L9%2C7%20Z%22%20id%3D%22Shape%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+    background-size: contain;
+}
