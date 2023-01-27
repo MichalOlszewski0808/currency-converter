@@ -1,25 +1,7 @@
 {
-  const convertAmoutFromCurrency = (inputCurrencyElement) => {
-    const inputCurrency = inputCurrencyElement.value;
+    const getRatio = (currency) =>{
 
-    switch (inputCurrency) {
-      case "PLN":
-        return 1.0;
-      case "EUR":
-        return 4.68;
-      case "USD":
-        return 4.41;
-      case "GBP":
-        return 5.31;
-      case "CHF":
-        return 4.74;
-    }
-  };
-
-  const convertAmountToCurrency = (outputCurrencyElement) => {
-    const outputCurrency = outputCurrencyElement.value;
-
-    switch (outputCurrency) {
+    switch (currency) {
       case "PLN":
         return 1.0;
       case "EUR":
@@ -38,9 +20,11 @@
     outputCurrencyElement,
     amount
   ) => {
+    const inputCurrency = inputCurrencyElement.value;
+    const outputCurrency = outputCurrencyElement.value;
     return (
-      (convertAmoutFromCurrency(inputCurrencyElement) * amount) /
-      convertAmountToCurrency(outputCurrencyElement)
+      (getRatio(inputCurrency) * amount) /
+      getRatio(outputCurrency)
     );
   };
 
@@ -52,6 +36,7 @@
     outputCurrency
   ) => {
     if (amount < 0) {
+      
       alert("Kwota do przeliczenia musi być nieujemna!");
       outputValueElement.value = `Wprowadzono błędną wartość!`;
       return;
@@ -84,7 +69,9 @@
   const init = () => {
     const formElement = document.querySelector(".js-form");
 
-    formElement.addEventListener("input", onFormChange);
+    formElement.addEventListener("input", () => {
+      onFormChange();
+    });
   };
 
   init();
