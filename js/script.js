@@ -64,12 +64,12 @@
     }
   };
 
-  const onFormSubmit = () => {
+  const onFormChange = () => {
     const inputValueElement = document.querySelector(".js-inputValue");
     const outputValueElement = document.querySelector(".js-outputValue");
     const inputCurrencyElement = document.querySelector(".js-inputCurrency");
     const outputCurrencyElement = document.querySelector(".js-outputCurrency");
-    const amount = +inputValueElement.value;
+    const amount = inputValueElement.value;
     const outputCurrency = outputCurrencyElement.value;
 
     updateResultText(
@@ -85,7 +85,7 @@
     const formElement = document.querySelector(".js-form");
 
     formElement.addEventListener("input", () => {
-      onFormSubmit();
+      onFormChange();
     });
   };
 
