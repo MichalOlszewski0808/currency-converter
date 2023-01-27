@@ -42,3 +42,11 @@
 .form__field:hover {
    background-color: rgb(215, 215, 215);
 }
+
+.form__field--validAmount {
+    background-color: crimson;
+}
+
+.form__field--validAmount.form__field--validAmount:hover {
+    background-color: lightcoral;
+}

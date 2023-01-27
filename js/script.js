@@ -1,6 +1,6 @@
 {
-    const getRatio = (currency) =>{
-
+  const inputValueElement = document.querySelector(".js-inputValue");
+  const getRatio = (currency) => {
     switch (currency) {
       case "PLN":
         return 1.0;
@@ -22,10 +22,7 @@
   ) => {
     const inputCurrency = inputCurrencyElement.value;
     const outputCurrency = outputCurrencyElement.value;
-    return (
-      (getRatio(inputCurrency) * amount) /
-      getRatio(outputCurrency)
-    );
+    return (getRatio(inputCurrency) * amount) / getRatio(outputCurrency);
   };
 
   const updateResultText = (
@@ -36,11 +33,11 @@
     outputCurrency
   ) => {
     if (amount < 0) {
-      
-      alert("Kwota do przeliczenia musi być nieujemna!");
+      inputValueElement.classList.add("form__field--validAmount");
       outputValueElement.value = `Wprowadzono błędną wartość!`;
       return;
     } else {
+      inputValueElement.classList.remove("form__field--validAmount");
       outputValueElement.value = `${calculateResult(
         inputCurrencyElement,
         outputCurrencyElement,
