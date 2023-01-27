@@ -4,7 +4,7 @@
 
 ## Demo
 
-https://michu0808.github.io/currency-converter
+https://michalolszewski0808.github.io/currency-converter/
 
 ## Description
 
