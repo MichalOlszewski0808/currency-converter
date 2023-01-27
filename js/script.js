@@ -84,9 +84,7 @@
   const init = () => {
     const formElement = document.querySelector(".js-form");
 
-    formElement.addEventListener("input", () => {
-      onFormChange();
-    });
+    formElement.addEventListener("input", onFormChange);
   };
 
   init();
