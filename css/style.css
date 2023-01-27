@@ -7,6 +7,10 @@ html {
 }
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     font-family: 'Lato', sans-serif;
     background-image: url("../images/exchangeOfficeBackground.png");
     background-size: cover;
